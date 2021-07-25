@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Labirint</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/bulma.css">
+  <script defer src="ui.js"></script>
+  <script defer src="solver.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <aside>
+      <h1 class="centered">Lee 1.0</h1>
+      <br />
+
+      <div>
+        
+
+        <label for="rows-input">Rows</label>
+        <input id="rows-input" class="input is-normal" type="text" placeholder="Rows">
+
+        <label for="cols-input">Columns</label>
+        <input id="cols-input" class="input is-normal" type="text" placeholder="Cols">
+
+        <br /><br />
+
+        <div class="has-text-centered">
+
+          <br/>
+          <button id="start-btn" onclick="selectStart(event)" class="button is-link is-light">Select Start</button>
+
+          <br/>
+          <br/>
+          <button id="finish-btn" onclick="selectFinish(event)" class="button is-link is-light">Select Finish</button>
+
+          <br />
+          <br />
+          <button id="wall-btn" onclick="selectWall(event)" class="button is-link is-light">Change Walls</button>
+          
+          <br />
+          <br />
+          <br />
+          <button id="build-btn" onclick="startAlgorithm()" class="button is-link is-success">Build</button>
+
+        </div>
+
+
+
+      </div>
+
+    </aside>
+
+    <main>
+      <div id="labirint">
+        <h1>Please enter rows and columns</h1>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  height: 100vh;
+}
+
+
+.container {
+  overflow: auto;
+}
+
+aside {
+  width: 20%;
+  float: left;
+  background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
+  height: 100vh;
+  border-right: 3px solid rgb(236, 50, 50);
+  color: white;
+  padding: 30px 8px;
+}
+
+main {
+  background: linear-gradient(to right, rgb(238, 238, 238), rgb(220, 220, 220));
+  float: left;
+  width: 80%;
+  height: 100vh;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.centered {
+  text-align: center;
+}
+
+#labirint {
+  overflow: auto;
+  height: 610px;
+  width: 610px;
+}
+
+.cell {
+  float:left;
+  border: 1px solid rgb(236, 50, 50);
+  background-color: white;
+}
+
+.path {
+  background-color: rgba(87, 150, 233, 0.384);
+}
+
+.wall {
+  background-color: rgb(205, 205, 205);
+}
+
+.start {
+  background-color: rgb(16, 235, 16) !important;
+}
+
+.finish {
+  background-color: rgb(236, 50, 50) !important;
+}
+
+
+
+.finish.path {
+  background: linear-gradient(rgb(236, 50, 50), rgb(184, 223, 230)) !important;
+}
+
+aside button {
+  width: 100%;
+}
+
+.active {
+  border: 2px solid rgb(8, 231, 8) !important;
+  color: rgb(8, 231, 8) !important;
+}
+
